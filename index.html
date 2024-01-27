@@ -5,15 +5,16 @@
 </head>
 <body>
     <h3>Track Calories</h3>
-    <form id="food-form">
-        <input type="text" id="food-name" placeholder="Food Name">
-        <input type="number" id="food-calories" placeholder=" Number of Calories">
-        <button type="submit">Submit</button>
-    </form>
+    <form id="calorieForm">
+        <label for="foodName">Food Name:</label><br>
+        <input type="text" id="foodName" name="foodName"><br>
+        <label for="calories">Calories:</label><br>
+        <input type="number" id="calories" name="calories"><br>
+        <input type="submit" value="Submit">
+      </form>
+      <div id="totalCalories"></div>
     
-    <h4>Total Calories: <span id="total-calories">0</span></h4>
-    
-    <script src="script.js"></script>
+   
    
 </body>
 </html>
