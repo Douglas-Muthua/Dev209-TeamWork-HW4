@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <title>Track Calories</title>
+    <link rel="stylesheet" href="style.css"  type="text/css" >
 </head>
 <body>
+    <div id="container">
     <h3>Track Calories</h3>
     <form id="calorieForm">
         <label for="foodName">Food Name:</label><br>
@@ -13,27 +15,8 @@
         <input type="submit" value="Submit">
       </form>
       <div id="totalCalories"></div>
-    
-   <script>
-    class Food {
-    constructor(name, calories) {
-        this.name = name;
-        this.calories = parseInt(calories);
-    }
-}
-
-let foodArray = [
-    new Food('Rice', 210),
-    new Food('Raisin', 120)
-];
-  let totalCalories = 0;
-document.getElementById('calorieForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  let calories = parseInt(document.getElementById('calories').value);
-  totalCalories += calories;
-  document.getElementById('totalCalories').innerText = 'Total Calories: ' + totalCalories;
-});
-  </script>
+    </div>
+   <script src="script.js"></script>
    
 </body>
 </html>
